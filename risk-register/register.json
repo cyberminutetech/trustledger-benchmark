@@ -1,0 +1,12 @@
+{
+  "items": [
+    {"id":"RISK-001","title":"SQL injection in user lookup","cwe":"CWE-89","severity":"critical","owner":"AppSec","reviewer":"Reviewer A","due_days":7,"status":"open"},
+    {"id":"RISK-002","title":"Unescaped HTML response","cwe":"CWE-79","severity":"high","owner":"Web Team","reviewer":"Reviewer B","due_days":14,"status":"open"},
+    {"id":"RISK-003","title":"Unsafe deserialization","cwe":"CWE-502","severity":"critical","owner":"Platform","reviewer":"Reviewer A","due_days":5,"status":"in_progress"},
+    {"id":"RISK-004","title":"Missing API authorization","cwe":"CWE-862","severity":"high","owner":"API Team","reviewer":"Reviewer C","due_days":10,"status":"open"},
+    {"id":"RISK-005","title":"Hardcoded fake credential fixture","cwe":"CWE-798","severity":"medium","owner":"DevEx","reviewer":"Reviewer D","due_days":21,"status":"open"},
+    {"id":"RISK-006","title":"Command injection path","cwe":"CWE-78","severity":"critical","owner":"Platform","reviewer":"Reviewer A","due_days":7,"status":"open"},
+    {"id":"RISK-007","title":"Path traversal in report export","cwe":"CWE-22","severity":"high","owner":"Backend","reviewer":"Reviewer B","due_days":14,"status":"open"},
+    {"id":"RISK-008","title":"Potential prototype pollution","cwe":"CWE-1321","severity":"high","owner":"Web Team","reviewer":"Reviewer C","due_days":14,"status":"triage"}
+  ]
+}

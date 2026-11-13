@@ -1,0 +1,13 @@
+{
+  "feed_type":"synthetic_patterns_not_live_threat_intelligence",
+  "patterns":[
+    {"id":"TH-001","name":"Credential exposure in repository","related_cwe":"CWE-798","severity":"high","matched_fixture":"secrets/fake-secrets.env","sla_days":14},
+    {"id":"TH-002","name":"Injection chain from public endpoint","related_cwe":"CWE-89","severity":"critical","matched_fixture":"apps/python/routes.py","sla_days":7},
+    {"id":"TH-003","name":"Authorization drift between sibling routes","related_cwe":"CWE-862","severity":"high","matched_fixture":"api-inventory/routes.json","sla_days":14},
+    {"id":"TH-004","name":"Unapproved AI tool observation","related_cwe":null,"severity":"medium","matched_fixture":"shadow-ai/observations.json","sla_days":30}
+  ],
+  "incidents":[
+    {"id":"INC-001","title":"Synthetic SQL injection incident","status":"investigating","owner":"AppSec","deadline_days":2,"linked_risks":["RISK-001"]},
+    {"id":"INC-002","title":"Synthetic API authorization gap","status":"open","owner":"API Team","deadline_days":5,"linked_risks":["RISK-004"]}
+  ]
+}

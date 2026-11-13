@@ -1,0 +1,146 @@
+[
+  {
+    "id": "TL-SQL-001",
+    "name": "SQL Injection",
+    "cwe": "CWE-89",
+    "source": "source: request parameters",
+    "sink": "sink: raw SQL execution",
+    "summary": "Track concatenated or interpolated input into SQL execution; recognize parameterized query APIs."
+  },
+  {
+    "id": "TL-XSS-001",
+    "name": "Cross-Site Scripting",
+    "cwe": "CWE-79",
+    "source": "source: request/body data",
+    "sink": "sink: HTML response, raw template output, DOM HTML sink",
+    "summary": "Apply context-sensitive encoding and distinguish safe templating from raw output."
+  },
+  {
+    "id": "TL-CMD-001",
+    "name": "OS Command Injection",
+    "cwe": "CWE-78",
+    "source": "source: request parameters",
+    "sink": "sink: shell execution / command construction",
+    "summary": "Track untrusted input into shell interpreters and command strings; prefer argument arrays."
+  },
+  {
+    "id": "TL-PATH-001",
+    "name": "Path Traversal",
+    "cwe": "CWE-22",
+    "source": "source: request/file name",
+    "sink": "sink: filesystem read/write",
+    "summary": "Check canonicalized resolved paths remain under the intended root."
+  },
+  {
+    "id": "TL-DESER-001",
+    "name": "Unsafe Deserialization",
+    "cwe": "CWE-502",
+    "source": "source: request body",
+    "sink": "sink: pickle/ObjectInputStream/unsafe object loader",
+    "summary": "Flag untrusted serialized bytes reaching unsafe deserialization."
+  },
+  {
+    "id": "TL-SSRF-001",
+    "name": "Server-Side Request Forgery",
+    "cwe": "CWE-918",
+    "source": "source: request URL",
+    "sink": "sink: outbound HTTP client",
+    "summary": "Validate scheme, host, DNS resolution and private/link-local destinations."
+  },
+  {
+    "id": "TL-REDIR-001",
+    "name": "Open Redirect",
+    "cwe": "CWE-601",
+    "source": "source: request redirect parameter",
+    "sink": "sink: redirect response",
+    "summary": "Require allowlisted destinations or same-origin validation."
+  },
+  {
+    "id": "TL-SECRET-001",
+    "name": "Hardcoded Credentials",
+    "cwe": "CWE-798",
+    "source": "source: repository literal",
+    "sink": "sink: credential/configuration use",
+    "summary": "Detect credential-shaped literals; suppress only known placeholders and test fixtures by policy."
+  },
+  {
+    "id": "TL-AUTH-001",
+    "name": "Missing Authorization",
+    "cwe": "CWE-862",
+    "source": "source: API route inventory",
+    "sink": "sink: sensitive handler",
+    "summary": "Compare sibling route policies and verify object-level authorization."
+  },
+  {
+    "id": "TL-IDOR-001",
+    "name": "Insecure Direct Object Reference",
+    "cwe": "CWE-639",
+    "source": "source: user-controlled object identifier",
+    "sink": "sink: object lookup/update",
+    "summary": "Verify ownership/tenant scope is enforced at the data access boundary."
+  },
+  {
+    "id": "TL-PROT-001",
+    "name": "Prototype Pollution",
+    "cwe": "CWE-1321",
+    "source": "source: untrusted object keys",
+    "sink": "sink: recursive/dynamic object assignment",
+    "summary": "Track tainted keys and dangerous merge operations."
+  },
+  {
+    "id": "TL-TPL-001",
+    "name": "Server-Side Template Injection",
+    "cwe": "CWE-1336",
+    "source": "source: request template input",
+    "sink": "sink: dynamic template compilation",
+    "summary": "Distinguish rendering data from compiling user-controlled template source."
+  },
+  {
+    "id": "TL-LOG-001",
+    "name": "Log Injection",
+    "cwe": "CWE-117",
+    "source": "source: request data",
+    "sink": "sink: log output",
+    "summary": "Detect control characters and untrusted fields entering security-sensitive logs."
+  },
+  {
+    "id": "TL-CRYPTO-001",
+    "name": "Weak Cryptography",
+    "cwe": "CWE-327",
+    "source": "source: crypto configuration",
+    "sink": "sink: cryptographic primitive",
+    "summary": "Identify weak algorithms, modes, key sizes and insecure randomness."
+  },
+  {
+    "id": "TL-SSL-001",
+    "name": "Improper Certificate Validation",
+    "cwe": "CWE-295",
+    "source": "source: TLS client configuration",
+    "sink": "sink: TLS connection",
+    "summary": "Detect disabled hostname/certificate validation."
+  },
+  {
+    "id": "TL-DEP-001",
+    "name": "Reachable Vulnerable Dependency",
+    "cwe": "CWE-1104",
+    "source": "source: dependency manifest",
+    "sink": "sink: reachable vulnerable API",
+    "summary": "Join advisory data with call-site reachability; don't equate installed with exploitable."
+  },
+  {
+    "id": "TL-API-001",
+    "name": "Webhook Signature Missing",
+    "cwe": "CWE-345",
+    "source": "source: inbound webhook",
+    "sink": "sink: trusted event processing",
+    "summary": "Require signature verification, timestamp freshness and replay protection."
+  },
+  {
+    "id": "TL-UNSAFE-001",
+    "name": "Unsafe Memory / FFI Boundary",
+    "cwe": "CWE-787",
+    "source": "source: external pointer/data",
+    "sink": "sink: unsafe dereference or FFI call",
+    "summary": "Review pointer provenance, bounds, ownership and lifetime."
+  }
+]

@@ -1,0 +1,13 @@
+id: TL-SSL-001
+name: Improper Certificate Validation
+cwe: CWE-295
+category: Improper Certificate Validation
+source_model: "source: TLS client configuration"
+sink_model: "sink: TLS connection"
+detection: "Detect disabled hostname/certificate validation."
+evidence_required:
+  - source_location
+  - sink_location
+  - propagation_path
+severity: contextual
+remediation: "Use safe APIs, validate at trust boundaries, and preserve context-appropriate encoding."

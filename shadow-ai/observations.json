@@ -1,0 +1,9 @@
+{
+  "policy": {"approved_tools":["GitHub Copilot Enterprise","Internal Code Assistant"],"block_unapproved":false},
+  "observations": [
+    {"id":"AI-001","repo_path":"apps/typescript/controller.ts","tool":"Unknown AI completion extension","signal":"Generated-code marker plus editor telemetry fixture","confidence":0.78,"status":"unapproved_candidate"},
+    {"id":"AI-002","repo_path":"apps/python/service.py","tool":"Public LLM web interface","signal":"Synthetic developer disclosure in commit metadata","confidence":0.91,"status":"unapproved_candidate"},
+    {"id":"AI-003","repo_path":"apps/java/UserService.java","tool":"GitHub Copilot Enterprise","signal":"Approved tool identifier","confidence":0.99,"status":"approved"}
+  ],
+  "warning":"Shadow-AI attribution is probabilistic. Do not infer tool use from code style alone."
+}

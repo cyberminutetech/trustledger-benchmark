@@ -1,0 +1,7 @@
+{
+  "model_version":"trustscore-demo-1",
+  "weights":{"attestation":0.30,"policy":0.25,"risk_resolution":0.25,"coverage":0.20},
+  "inputs":{"attestation_score":82,"policy_score":76,"risk_resolution_score":61,"coverage_score":90},
+  "expected_blended_score":77.45,
+  "note":"Synthetic UI fixture only. Display component scores and explainability; do not present this score as an objective security guarantee."
+}

@@ -1,0 +1,13 @@
+id: TL-XSS-001
+name: Cross-Site Scripting
+cwe: CWE-79
+category: Cross-Site Scripting
+source_model: "source: request/body data"
+sink_model: "sink: HTML response, raw template output, DOM HTML sink"
+detection: "Apply context-sensitive encoding and distinguish safe templating from raw output."
+evidence_required:
+  - source_location
+  - sink_location
+  - propagation_path
+severity: contextual
+remediation: "Use safe APIs, validate at trust boundaries, and preserve context-appropriate encoding."

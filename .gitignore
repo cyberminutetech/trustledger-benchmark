@@ -1,0 +1,10 @@
+node_modules/
+vendor/
+target/
+bin/
+obj/
+.gradle/
+__pycache__/
+.env
+*.class
+*.log

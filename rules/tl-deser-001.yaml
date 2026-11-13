@@ -1,0 +1,13 @@
+id: TL-DESER-001
+name: Unsafe Deserialization
+cwe: CWE-502
+category: Unsafe Deserialization
+source_model: "source: request body"
+sink_model: "sink: pickle/ObjectInputStream/unsafe object loader"
+detection: "Flag untrusted serialized bytes reaching unsafe deserialization."
+evidence_required:
+  - source_location
+  - sink_location
+  - propagation_path
+severity: contextual
+remediation: "Use safe APIs, validate at trust boundaries, and preserve context-appropriate encoding."

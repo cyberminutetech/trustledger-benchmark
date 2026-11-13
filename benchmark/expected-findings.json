@@ -1,0 +1,248 @@
+[
+  {
+    "finding_id": "TL-PY-001",
+    "rule": "TL-SQL-001",
+    "language": "python",
+    "file": "apps/python/db.py",
+    "cwe": "CWE-89",
+    "severity": "critical",
+    "expected": "must_detect",
+    "trace": "TRACE-PY-SQL"
+  },
+  {
+    "finding_id": "TL-PY-002",
+    "rule": "TL-PATH-001",
+    "language": "python",
+    "file": "apps/python/db.py",
+    "cwe": "CWE-22",
+    "severity": "high",
+    "expected": "must_detect",
+    "trace": "TRACE-PY-PATH"
+  },
+  {
+    "finding_id": "TL-PY-003",
+    "rule": "TL-DESER-001",
+    "language": "python",
+    "file": "apps/python/db.py",
+    "cwe": "CWE-502",
+    "severity": "critical",
+    "expected": "must_detect"
+  },
+  {
+    "finding_id": "TL-JS-001",
+    "rule": "TL-XSS-001",
+    "language": "javascript",
+    "file": "apps/javascript/profileService.js",
+    "cwe": "CWE-79",
+    "severity": "high",
+    "expected": "must_detect",
+    "trace": "TRACE-JS-XSS"
+  },
+  {
+    "finding_id": "TL-JS-002",
+    "rule": "TL-SQL-001",
+    "language": "javascript",
+    "file": "apps/javascript/query.js",
+    "cwe": "CWE-89",
+    "severity": "critical",
+    "expected": "must_detect",
+    "trace": "TRACE-JS-SQL"
+  },
+  {
+    "finding_id": "TL-JS-003",
+    "rule": "TL-PROT-001",
+    "language": "javascript",
+    "file": "apps/javascript/profileService.js",
+    "cwe": "CWE-1321",
+    "severity": "high",
+    "expected": "should_detect"
+  },
+  {
+    "finding_id": "TL-TS-001",
+    "rule": "TL-SQL-001",
+    "language": "typescript",
+    "file": "apps/typescript/sinks.ts",
+    "cwe": "CWE-89",
+    "severity": "critical",
+    "expected": "must_detect",
+    "trace": "TRACE-TS-SQL"
+  },
+  {
+    "finding_id": "TL-TS-002",
+    "rule": "TL-TPL-001",
+    "language": "typescript",
+    "file": "apps/typescript/sinks.ts",
+    "cwe": "CWE-1336",
+    "severity": "high",
+    "expected": "should_detect"
+  },
+  {
+    "finding_id": "TL-GO-001",
+    "rule": "TL-SQL-001",
+    "language": "go",
+    "file": "apps/go/store.go",
+    "cwe": "CWE-89",
+    "severity": "critical",
+    "expected": "must_detect",
+    "trace": "TRACE-GO-SQL"
+  },
+  {
+    "finding_id": "TL-GO-002",
+    "rule": "TL-CMD-001",
+    "language": "go",
+    "file": "apps/go/store.go",
+    "cwe": "CWE-78",
+    "severity": "critical",
+    "expected": "should_detect"
+  },
+  {
+    "finding_id": "TL-CS-001",
+    "rule": "TL-SQL-001",
+    "language": "csharp",
+    "file": "apps/csharp/UserRepository.cs",
+    "cwe": "CWE-89",
+    "severity": "critical",
+    "expected": "must_detect",
+    "trace": "TRACE-CS-SQL"
+  },
+  {
+    "finding_id": "TL-CS-002",
+    "rule": "TL-XSS-001",
+    "language": "csharp",
+    "file": "apps/csharp/Views/Users/Preview.cshtml",
+    "cwe": "CWE-79",
+    "severity": "high",
+    "expected": "must_detect"
+  },
+  {
+    "finding_id": "TL-PHP-001",
+    "rule": "TL-SQL-001",
+    "language": "php",
+    "file": "apps/php/UserRepository.php",
+    "cwe": "CWE-89",
+    "severity": "critical",
+    "expected": "must_detect",
+    "trace": "TRACE-PHP-SQL"
+  },
+  {
+    "finding_id": "TL-PHP-002",
+    "rule": "TL-XSS-001",
+    "language": "php",
+    "file": "apps/php/templates/profile.php",
+    "cwe": "CWE-79",
+    "severity": "high",
+    "expected": "must_detect"
+  },
+  {
+    "finding_id": "TL-RUBY-001",
+    "rule": "TL-SQL-001",
+    "language": "ruby",
+    "file": "apps/ruby/user_repository.rb",
+    "cwe": "CWE-89",
+    "severity": "critical",
+    "expected": "must_detect",
+    "trace": "TRACE-RUBY-SQL"
+  },
+  {
+    "finding_id": "TL-RUBY-002",
+    "rule": "TL-IDOR-001",
+    "language": "ruby",
+    "file": "apps/ruby/user_repository.rb",
+    "cwe": "CWE-639",
+    "severity": "high",
+    "expected": "informational"
+  },
+  {
+    "finding_id": "TL-RUST-001",
+    "rule": "TL-SQL-001",
+    "language": "rust",
+    "file": "apps/rust/src/storage.rs",
+    "cwe": "CWE-89",
+    "severity": "critical",
+    "expected": "must_detect"
+  },
+  {
+    "finding_id": "TL-RUST-002",
+    "rule": "TL-CMD-001",
+    "language": "rust",
+    "file": "apps/rust/src/storage.rs",
+    "cwe": "CWE-78",
+    "severity": "critical",
+    "expected": "must_detect",
+    "trace": "TRACE-RUST-CMD"
+  },
+  {
+    "finding_id": "TL-RUST-003",
+    "rule": "TL-UNSAFE-001",
+    "language": "rust",
+    "file": "apps/rust/src/storage.rs",
+    "cwe": "CWE-787",
+    "severity": "medium",
+    "expected": "should_detect"
+  },
+  {
+    "finding_id": "TL-JAVA-001",
+    "rule": "TL-SQL-001",
+    "language": "java",
+    "file": "apps/java/UserDao.java",
+    "cwe": "CWE-89",
+    "severity": "critical",
+    "expected": "must_detect"
+  },
+  {
+    "finding_id": "TL-JAVA-002",
+    "rule": "TL-DESER-001",
+    "language": "java",
+    "file": "apps/java/UserDao.java",
+    "cwe": "CWE-502",
+    "severity": "critical",
+    "expected": "must_detect",
+    "trace": "TRACE-JAVA-DESER"
+  },
+  {
+    "finding_id": "TL-KT-001",
+    "rule": "TL-SQL-001",
+    "language": "kotlin",
+    "file": "apps/kotlin/ProfileStore.kt",
+    "cwe": "CWE-89",
+    "severity": "critical",
+    "expected": "must_detect"
+  },
+  {
+    "finding_id": "TL-KT-002",
+    "rule": "TL-XSS-001",
+    "language": "kotlin",
+    "file": "apps/kotlin/ProfileStore.kt",
+    "cwe": "CWE-79",
+    "severity": "high",
+    "expected": "must_detect",
+    "trace": "TRACE-KOTLIN-WEBVIEW"
+  },
+  {
+    "finding_id": "TL-API-001",
+    "rule": "TL-AUTH-001",
+    "language": "api",
+    "file": "api-inventory/routes.json",
+    "cwe": "CWE-862",
+    "severity": "high",
+    "expected": "must_detect"
+  },
+  {
+    "finding_id": "TL-SEC-001",
+    "rule": "TL-SECRET-001",
+    "language": "secrets",
+    "file": "secrets/fake-secrets.env",
+    "cwe": "CWE-798",
+    "severity": "high",
+    "expected": "must_detect"
+  },
+  {
+    "finding_id": "TL-DEP-001",
+    "rule": "TL-DEP-001",
+    "language": "dependencies",
+    "file": "dependencies/reachability.json",
+    "cwe": "CWE-1104",
+    "severity": "high",
+    "expected": "should_detect"
+  }
+]

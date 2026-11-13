@@ -1,0 +1,13 @@
+id: TL-API-001
+name: Webhook Signature Missing
+cwe: CWE-345
+category: Webhook Signature Missing
+source_model: "source: inbound webhook"
+sink_model: "sink: trusted event processing"
+detection: "Require signature verification, timestamp freshness and replay protection."
+evidence_required:
+  - source_location
+  - sink_location
+  - propagation_path
+severity: contextual
+remediation: "Use safe APIs, validate at trust boundaries, and preserve context-appropriate encoding."

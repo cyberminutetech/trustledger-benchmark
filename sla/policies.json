@@ -1,0 +1,11 @@
+{
+  "policy_name":"Synthetic AppSec remediation SLA",
+  "targets_days":{"critical":7,"high":14,"medium":30,"low":90},
+  "items":[
+    {"finding_id":"TL-PY-001","severity":"critical","opened_days_ago":9,"status":"open","sla":"overdue"},
+    {"finding_id":"TL-TS-001","severity":"high","opened_days_ago":5,"status":"open","sla":"on_track"},
+    {"finding_id":"TL-JAVA-001","severity":"critical","opened_days_ago":6,"status":"in_progress","sla":"at_risk"},
+    {"finding_id":"TL-GO-001","severity":"high","opened_days_ago":16,"status":"open","sla":"overdue"},
+    {"finding_id":"TL-RUBY-001","severity":"medium","opened_days_ago":12,"status":"open","sla":"on_track"}
+  ]
+}

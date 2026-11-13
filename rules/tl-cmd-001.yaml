@@ -1,0 +1,13 @@
+id: TL-CMD-001
+name: OS Command Injection
+cwe: CWE-78
+category: OS Command Injection
+source_model: "source: request parameters"
+sink_model: "sink: shell execution / command construction"
+detection: "Track untrusted input into shell interpreters and command strings; prefer argument arrays."
+evidence_required:
+  - source_location
+  - sink_location
+  - propagation_path
+severity: contextual
+remediation: "Use safe APIs, validate at trust boundaries, and preserve context-appropriate encoding."

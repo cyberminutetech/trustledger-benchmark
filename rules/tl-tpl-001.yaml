@@ -1,0 +1,13 @@
+id: TL-TPL-001
+name: Server-Side Template Injection
+cwe: CWE-1336
+category: Server-Side Template Injection
+source_model: "source: request template input"
+sink_model: "sink: dynamic template compilation"
+detection: "Distinguish rendering data from compiling user-controlled template source."
+evidence_required:
+  - source_location
+  - sink_location
+  - propagation_path
+severity: contextual
+remediation: "Use safe APIs, validate at trust boundaries, and preserve context-appropriate encoding."

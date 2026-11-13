@@ -1,0 +1,11 @@
+{
+  "organization":"TrustLedger Demo Org",
+  "health_score":74,
+  "repositories":[
+    {"name":"payments-api","health":61,"critical_open":3,"overdue_sla":2,"attention":"SQL injection and overdue remediation"},
+    {"name":"identity-service","health":83,"critical_open":0,"overdue_sla":0,"attention":"Review expiring attestations"},
+    {"name":"web-portal","health":69,"critical_open":1,"overdue_sla":1,"attention":"Missing authorization on sibling routes"},
+    {"name":"data-platform","health":82,"critical_open":0,"overdue_sla":0,"attention":"Dependency reachability review"}
+  ],
+  "attention_now":["Resolve overdue critical SQL injection","Review missing API authorization","Rotate any real credentials if found; benchmark secrets are fake"]
+}

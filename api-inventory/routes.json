@@ -1,0 +1,17 @@
+{
+  "service": "trustledger-demo-api",
+  "routes": [
+    {"method":"GET","path":"/api/users/me","handler":"UserController.me","auth":"required","role":"user"},
+    {"method":"GET","path":"/api/users/{id}","handler":"UserController.byId","auth":"missing","role":"none","expected":"AUTH_GAP"},
+    {"method":"GET","path":"/api/users/{id}/billing","handler":"BillingController.byUser","auth":"required","role":"billing"},
+    {"method":"GET","path":"/api/users/{id}/settings","handler":"SettingsController.byUser","auth":"missing","role":"none","expected":"AUTH_GAP"},
+    {"method":"POST","path":"/api/admin/users","handler":"AdminController.create","auth":"required","role":"admin"},
+    {"method":"DELETE","path":"/api/admin/users/{id}","handler":"AdminController.delete","auth":"required","role":"admin"},
+    {"method":"POST","path":"/api/upload","handler":"UploadController.upload","auth":"required","role":"user"},
+    {"method":"GET","path":"/api/reports/{name}","handler":"ReportController.download","auth":"missing","role":"none","expected":"AUTH_GAP"},
+    {"method":"POST","path":"/api/webhooks/payment","handler":"WebhookController.payment","auth":"signature_missing","role":"service"},
+    {"method":"GET","path":"/health","handler":"HealthController.health","auth":"public","role":"public"},
+    {"method":"POST","path":"/api/tokens/refresh","handler":"TokenController.refresh","auth":"required","role":"user"},
+    {"method":"POST","path":"/api/ai/complete","handler":"AIController.complete","auth":"required","role":"user"}
+  ]
+}

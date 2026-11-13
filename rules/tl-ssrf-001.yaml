@@ -1,0 +1,13 @@
+id: TL-SSRF-001
+name: Server-Side Request Forgery
+cwe: CWE-918
+category: Server-Side Request Forgery
+source_model: "source: request URL"
+sink_model: "sink: outbound HTTP client"
+detection: "Validate scheme, host, DNS resolution and private/link-local destinations."
+evidence_required:
+  - source_location
+  - sink_location
+  - propagation_path
+severity: contextual
+remediation: "Use safe APIs, validate at trust boundaries, and preserve context-appropriate encoding."

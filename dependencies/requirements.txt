@@ -1,0 +1,6 @@
+# Synthetic pinned dependency fixture; compare against your own advisory feed.
+Django==2.2.0
+Flask==1.0.0
+Jinja2==2.10
+PyYAML==5.3
+requests==2.20.0

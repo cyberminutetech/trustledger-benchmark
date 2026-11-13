@@ -1,0 +1,13 @@
+id: TL-AUTH-001
+name: Missing Authorization
+cwe: CWE-862
+category: Missing Authorization
+source_model: "source: API route inventory"
+sink_model: "sink: sensitive handler"
+detection: "Compare sibling route policies and verify object-level authorization."
+evidence_required:
+  - source_location
+  - sink_location
+  - propagation_path
+severity: contextual
+remediation: "Use safe APIs, validate at trust boundaries, and preserve context-appropriate encoding."
