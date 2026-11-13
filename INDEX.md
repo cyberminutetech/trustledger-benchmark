@@ -1,0 +1,18 @@
+# Benchmark Index
+
+- [Expected findings](benchmark/expected-findings.json)
+- [Canonical traces](traces/canonical-traces.json)
+- [Rule catalogue](rules/catalog.json)
+- [API inventory](api-inventory/routes.json)
+- [Secrets expectations](secrets/expectations.json)
+- [Dependency reachability](dependencies/reachability.json)
+- [Compliance mapping](compliance/control-mapping.json)
+- [SLA policy](sla/policies.json)
+- [Risk register](risk-register/register.json)
+- [Audit events](audit/events.jsonl)
+- [SBOM expectations](reports/expected-sbom-components.json)
+- [Shadow AI observations](shadow-ai/observations.json)
+- [Threat feed](threats/threat-feed.json)
+- [Analytics metrics](benchmark/analytics/metrics.json)
+- [TrustScore inputs](benchmark/trustscore-input.json)
+- [Organization health](benchmark/org-health.json)

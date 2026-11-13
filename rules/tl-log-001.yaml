@@ -1,0 +1,13 @@
+id: TL-LOG-001
+name: Log Injection
+cwe: CWE-117
+category: Log Injection
+source_model: "source: request data"
+sink_model: "sink: log output"
+detection: "Detect control characters and untrusted fields entering security-sensitive logs."
+evidence_required:
+  - source_location
+  - sink_location
+  - propagation_path
+severity: contextual
+remediation: "Use safe APIs, validate at trust boundaries, and preserve context-appropriate encoding."

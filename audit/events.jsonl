@@ -1,0 +1,4 @@
+{"event_id":"AUD-0001","timestamp":"2026-11-01T09:00:00Z","actor":"ci-bot","action":"scan.completed","repo":"trustledger-demo","scan_id":"SCAN-1001","integrity":"sha256:demo-placeholder"}
+{"event_id":"AUD-0002","timestamp":"2026-11-01T09:02:00Z","actor":"appsec-reviewer","action":"finding.triaged","finding_id":"TL-PY-001","status":"confirmed","integrity":"sha256:demo-placeholder"}
+{"event_id":"AUD-0003","timestamp":"2026-11-01T09:05:00Z","actor":"release-manager","action":"policy.override","policy":"critical-block","reason":"Synthetic approved exception","expires":"2026-11-08T00:00:00Z","integrity":"sha256:demo-placeholder"}
+{"event_id":"AUD-0004","timestamp":"2026-11-01T09:10:00Z","actor":"ci-bot","action":"attestation.created","attestation_id":"ATT-2001","integrity":"sha256:demo-placeholder"}

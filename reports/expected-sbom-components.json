@@ -1,0 +1,10 @@
+{
+  "format_expectations":["SPDX-2.3","CycloneDX-1.5"],
+  "components":[
+    {"name":"express","version":"4.17.1","type":"library","purl":"pkg:npm/express@4.17.1"},
+    {"name":"lodash","version":"4.17.20","type":"library","purl":"pkg:npm/lodash@4.17.20"},
+    {"name":"axios","version":"0.21.0","type":"library","purl":"pkg:npm/axios@0.21.0"},
+    {"name":"Django","version":"2.2.0","type":"library","purl":"pkg:pypi/django@2.2.0"},
+    {"name":"Flask","version":"1.0.0","type":"library","purl":"pkg:pypi/flask@1.0.0"}
+  ]
+}

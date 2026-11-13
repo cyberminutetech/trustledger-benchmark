@@ -1,0 +1,13 @@
+id: TL-UNSAFE-001
+name: Unsafe Memory / FFI Boundary
+cwe: CWE-787
+category: Unsafe Memory / FFI Boundary
+source_model: "source: external pointer/data"
+sink_model: "sink: unsafe dereference or FFI call"
+detection: "Review pointer provenance, bounds, ownership and lifetime."
+evidence_required:
+  - source_location
+  - sink_location
+  - propagation_path
+severity: contextual
+remediation: "Use safe APIs, validate at trust boundaries, and preserve context-appropriate encoding."

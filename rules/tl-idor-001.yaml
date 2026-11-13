@@ -1,0 +1,13 @@
+id: TL-IDOR-001
+name: Insecure Direct Object Reference
+cwe: CWE-639
+category: Insecure Direct Object Reference
+source_model: "source: user-controlled object identifier"
+sink_model: "sink: object lookup/update"
+detection: "Verify ownership/tenant scope is enforced at the data access boundary."
+evidence_required:
+  - source_location
+  - sink_location
+  - propagation_path
+severity: contextual
+remediation: "Use safe APIs, validate at trust boundaries, and preserve context-appropriate encoding."

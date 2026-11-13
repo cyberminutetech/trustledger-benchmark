@@ -1,0 +1,6 @@
+{"scan_id":"SCAN-1001","timestamp":"2026-11-10T10:00:00Z","repo":"trustledger-enterprise-benchmark","event":"scan.started","files":84}
+{"scan_id":"SCAN-1001","timestamp":"2026-11-10T10:00:14Z","event":"scan.completed","findings":26,"critical":9,"high":11,"medium":6}
+{"scan_id":"SCAN-1002","timestamp":"2026-11-11T10:00:00Z","event":"scan.started","files":86}
+{"scan_id":"SCAN-1002","timestamp":"2026-11-11T10:00:18Z","event":"scan.completed","findings":24,"critical":7,"high":10,"medium":7}
+{"scan_id":"SCAN-1003","timestamp":"2026-11-12T10:00:00Z","event":"scan.started","files":88}
+{"scan_id":"SCAN-1003","timestamp":"2026-11-12T10:00:21Z","event":"scan.completed","findings":22,"critical":6,"high":9,"medium":7}

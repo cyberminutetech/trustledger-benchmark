@@ -1,0 +1,13 @@
+id: TL-PATH-001
+name: Path Traversal
+cwe: CWE-22
+category: Path Traversal
+source_model: "source: request/file name"
+sink_model: "sink: filesystem read/write"
+detection: "Check canonicalized resolved paths remain under the intended root."
+evidence_required:
+  - source_location
+  - sink_location
+  - propagation_path
+severity: contextual
+remediation: "Use safe APIs, validate at trust boundaries, and preserve context-appropriate encoding."

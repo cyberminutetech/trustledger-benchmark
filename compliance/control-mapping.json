@@ -1,0 +1,30 @@
+{
+  "disclaimer":"Illustrative mapping for product testing only. Validate applicability and control interpretation with qualified compliance professionals.",
+  "frameworks":{
+    "SOC2":{
+      "CC6.1":["authentication","authorization","access_control"],
+      "CC7.1":["vulnerability_scanning","security_monitoring"],
+      "CC7.2":["incident_detection","threat_alerting"],
+      "CC8.1":["change_management","code_review","audit_trail"]
+    },
+    "EU_AI_ACT":{
+      "Article_9":["risk_management","risk_register","mitigation_tracking"],
+      "Article_10":["data_governance","data_quality"],
+      "Article_12":["logging","traceability","audit_trail"],
+      "Article_15":["accuracy","robustness","cybersecurity"]
+    },
+    "PCI_DSS_4_0":{
+      "6.2":["secure_software_development","code_review"],
+      "6.3":["vulnerability_management","dependency_scanning"],
+      "6.4":["web_application_security"],
+      "10":["audit_logging"],
+      "11.3":["penetration_testing","security_testing"]
+    }
+  },
+  "evidence_examples":[
+    {"id":"EV-001","type":"scan_report","supports":["SOC2.CC7.1","PCI_DSS_4_0.6.3"]},
+    {"id":"EV-002","type":"signed_attestation","supports":["SOC2.CC8.1","EU_AI_ACT.Article_12"]},
+    {"id":"EV-003","type":"api_authorization_report","supports":["SOC2.CC6.1","PCI_DSS_4_0.6.4"]},
+    {"id":"EV-004","type":"risk_register_export","supports":["EU_AI_ACT.Article_9"]}
+  ]
+}

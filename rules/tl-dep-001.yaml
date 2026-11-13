@@ -1,0 +1,13 @@
+id: TL-DEP-001
+name: Reachable Vulnerable Dependency
+cwe: CWE-1104
+category: Reachable Vulnerable Dependency
+source_model: "source: dependency manifest"
+sink_model: "sink: reachable vulnerable API"
+detection: "Join advisory data with call-site reachability; don't equate installed with exploitable."
+evidence_required:
+  - source_location
+  - sink_location
+  - propagation_path
+severity: contextual
+remediation: "Use safe APIs, validate at trust boundaries, and preserve context-appropriate encoding."

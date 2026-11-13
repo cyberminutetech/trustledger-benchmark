@@ -1,0 +1,9 @@
+{
+  "advisory_mode": "synthetic_fixture_not_live_intelligence",
+  "components": [
+    {"name":"lodash","version":"4.17.20","ecosystem":"npm","synthetic_advisory":"TL-DEMO-001","cwe":"CWE-1321","reachable":true,"path":["src/mergePreferences.js","node_modules/lodash/merge"]},
+    {"name":"axios","version":"0.21.0","ecosystem":"npm","synthetic_advisory":"TL-DEMO-002","cwe":"CWE-918","reachable":false,"reason":"No vulnerable API call found in fixture"},
+    {"name":"Django","version":"2.2.0","ecosystem":"pypi","synthetic_advisory":"TL-DEMO-003","cwe":"CWE-352","reachable":true,"path":["apps/python/routes.py","apps/python/service.py"]},
+    {"name":"PyYAML","version":"5.3","ecosystem":"pypi","synthetic_advisory":"TL-DEMO-004","cwe":"CWE-502","reachable":false,"reason":"No yaml.load call in fixture"}
+  ]
+}

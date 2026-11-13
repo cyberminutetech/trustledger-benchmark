@@ -1,0 +1,13 @@
+id: TL-CRYPTO-001
+name: Weak Cryptography
+cwe: CWE-327
+category: Weak Cryptography
+source_model: "source: crypto configuration"
+sink_model: "sink: cryptographic primitive"
+detection: "Identify weak algorithms, modes, key sizes and insecure randomness."
+evidence_required:
+  - source_location
+  - sink_location
+  - propagation_path
+severity: contextual
+remediation: "Use safe APIs, validate at trust boundaries, and preserve context-appropriate encoding."

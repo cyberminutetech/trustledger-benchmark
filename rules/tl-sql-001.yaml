@@ -1,0 +1,13 @@
+id: TL-SQL-001
+name: SQL Injection
+cwe: CWE-89
+category: SQL Injection
+source_model: "source: request parameters"
+sink_model: "sink: raw SQL execution"
+detection: "Track concatenated or interpolated input into SQL execution; recognize parameterized query APIs."
+evidence_required:
+  - source_location
+  - sink_location
+  - propagation_path
+severity: contextual
+remediation: "Use safe APIs, validate at trust boundaries, and preserve context-appropriate encoding."

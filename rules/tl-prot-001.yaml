@@ -1,0 +1,13 @@
+id: TL-PROT-001
+name: Prototype Pollution
+cwe: CWE-1321
+category: Prototype Pollution
+source_model: "source: untrusted object keys"
+sink_model: "sink: recursive/dynamic object assignment"
+detection: "Track tainted keys and dangerous merge operations."
+evidence_required:
+  - source_location
+  - sink_location
+  - propagation_path
+severity: contextual
+remediation: "Use safe APIs, validate at trust boundaries, and preserve context-appropriate encoding."

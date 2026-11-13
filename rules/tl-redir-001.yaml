@@ -1,0 +1,13 @@
+id: TL-REDIR-001
+name: Open Redirect
+cwe: CWE-601
+category: Open Redirect
+source_model: "source: request redirect parameter"
+sink_model: "sink: redirect response"
+detection: "Require allowlisted destinations or same-origin validation."
+evidence_required:
+  - source_location
+  - sink_location
+  - propagation_path
+severity: contextual
+remediation: "Use safe APIs, validate at trust boundaries, and preserve context-appropriate encoding."

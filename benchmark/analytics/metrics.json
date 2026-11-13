@@ -1,0 +1,6 @@
+{
+  "period":"last_30_days_synthetic",
+  "scan_volume":[{"date":"2026-10-15","count":18},{"date":"2026-10-22","count":24},{"date":"2026-10-29","count":31},{"date":"2026-11-05","count":28},{"date":"2026-11-12","count":35}],
+  "finding_trend":[{"date":"2026-10-15","critical":12,"high":28,"medium":41},{"date":"2026-10-22","critical":11,"high":25,"medium":39},{"date":"2026-10-29","critical":9,"high":22,"medium":36},{"date":"2026-11-05","critical":7,"high":18,"medium":31},{"date":"2026-11-12","critical":6,"high":16,"medium":29}],
+  "median_time_to_attest_hours":18.4
+}

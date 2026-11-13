@@ -1,0 +1,8 @@
+{
+  "report_id":"REP-0001",
+  "repository":"trustledger-enterprise-benchmark",
+  "generated_at":"2026-11-13T00:00:00Z",
+  "formats":["SARIF-2.1.0","SPDX-2.3","CycloneDX-1.5","PDF"],
+  "signature":{"algorithm":"Ed25519","status":"not_signed_fixture","key_id":null},
+  "note":"Generate and cryptographically sign actual evidence packages in the product; this file is test metadata only."
+}

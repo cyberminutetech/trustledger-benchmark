@@ -1,0 +1,1 @@
+Audit event hashes are placeholders for UI/ingestion tests, not cryptographic signatures or an immutable ledger. Production audit integrity requires server-controlled signing keys, signature verification, append-only storage and key rotation.

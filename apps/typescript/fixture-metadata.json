@@ -1,0 +1,7 @@
+{
+  "language": "typescript",
+  "purpose": "intentionally_vulnerable_static_analysis_fixture",
+  "cross_file": true,
+  "safe_negative_examples": true,
+  "do_not_deploy": true
+}

@@ -1,0 +1,16 @@
+{
+  "benchmark_id": "trustledger-enterprise-multilang-v1",
+  "version": "1.0.0",
+  "purpose": "Synthetic security scanner validation",
+  "languages": ["go", "csharp", "php", "kotlin", "ruby", "rust", "java", "python", "javascript", "typescript"],
+  "product_surfaces": ["overview", "analytics", "trustscore", "compliance", "sla", "risk-register", "scan-history", "secrets", "dependencies", "api-security", "shadow-ai", "audit-trail", "reports", "trace", "rule-catalog", "threats"],
+  "safety": {"toy_apps_only": true, "fake_secrets_only": true, "not_for_production": true},
+  "fixture_counts": {
+    "language_apps": 10,
+    "canonical_traces": 12,
+    "rules": 18,
+    "fake_secret_cases": 8,
+    "api_routes": 12,
+    "risk_register_items": 8
+  }
+}

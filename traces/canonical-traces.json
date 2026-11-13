@@ -1,0 +1,157 @@
+[
+  {
+    "id": "TRACE-PY-SQL",
+    "language": "python",
+    "source": "apps/python/routes.py:get_user -> request.query_params['id']",
+    "steps": [
+      "apps/python/routes.py:get_user",
+      "apps/python/service.py:lookup_user",
+      "apps/python/db.py:run_query"
+    ],
+    "sink": "database.execute(sql)",
+    "cwe": "CWE-89",
+    "expected": "must_detect"
+  },
+  {
+    "id": "TRACE-PY-PATH",
+    "language": "python",
+    "source": "apps/python/routes.py:download -> request.query_params['name']",
+    "steps": [
+      "apps/python/routes.py:download",
+      "apps/python/service.py:export_report",
+      "apps/python/db.py:write_report"
+    ],
+    "sink": "open(path, 'w')",
+    "cwe": "CWE-22",
+    "expected": "must_detect"
+  },
+  {
+    "id": "TRACE-JS-XSS",
+    "language": "javascript",
+    "source": "apps/javascript/routes.js:bioRoute -> req.body.bio",
+    "steps": [
+      "apps/javascript/routes.js:bioRoute",
+      "apps/javascript/profileService.js:renderBio"
+    ],
+    "sink": "res.send(unescaped HTML)",
+    "cwe": "CWE-79",
+    "expected": "must_detect"
+  },
+  {
+    "id": "TRACE-JS-SQL",
+    "language": "javascript",
+    "source": "apps/javascript/routes.js:profileRoute -> req.query.id",
+    "steps": [
+      "apps/javascript/routes.js:profileRoute",
+      "apps/javascript/profileService.js:getProfile",
+      "apps/javascript/query.js:rawLookup"
+    ],
+    "sink": "db.query(sql)",
+    "cwe": "CWE-89",
+    "expected": "must_detect"
+  },
+  {
+    "id": "TRACE-TS-SQL",
+    "language": "typescript",
+    "source": "apps/typescript/controller.ts:invoice -> req.query.id",
+    "steps": [
+      "apps/typescript/controller.ts:invoice",
+      "apps/typescript/service.ts:fetchInvoice",
+      "apps/typescript/sinks.ts:executeSql"
+    ],
+    "sink": "pool.query(query)",
+    "cwe": "CWE-89",
+    "expected": "must_detect"
+  },
+  {
+    "id": "TRACE-GO-SQL",
+    "language": "go",
+    "source": "apps/go/handler.go:UserHandler -> r.URL.Query().Get('id')",
+    "steps": [
+      "apps/go/handler.go:UserHandler",
+      "apps/go/service.go:UserLookup",
+      "apps/go/store.go:QueryStore"
+    ],
+    "sink": "database.Query(query)",
+    "cwe": "CWE-89",
+    "expected": "must_detect"
+  },
+  {
+    "id": "TRACE-CS-SQL",
+    "language": "csharp",
+    "source": "apps/csharp/UsersController.cs:Details -> id",
+    "steps": [
+      "apps/csharp/UsersController.cs:Details",
+      "apps/csharp/UserService.cs:Find",
+      "apps/csharp/UserRepository.cs:FindRaw"
+    ],
+    "sink": "SqlCommand.ExecuteReader()",
+    "cwe": "CWE-89",
+    "expected": "must_detect"
+  },
+  {
+    "id": "TRACE-PHP-SQL",
+    "language": "php",
+    "source": "apps/php/public.php:$_GET['id']",
+    "steps": [
+      "apps/php/public.php",
+      "apps/php/UserService.php:find",
+      "apps/php/UserRepository.php:raw"
+    ],
+    "sink": "mysqli_query(db, sql)",
+    "cwe": "CWE-89",
+    "expected": "must_detect"
+  },
+  {
+    "id": "TRACE-RUBY-SQL",
+    "language": "ruby",
+    "source": "apps/ruby/users_controller.rb:params[:id]",
+    "steps": [
+      "apps/ruby/users_controller.rb:show",
+      "apps/ruby/user_service.rb:find",
+      "apps/ruby/user_repository.rb:raw"
+    ],
+    "sink": "connection.execute(sql)",
+    "cwe": "CWE-89",
+    "expected": "must_detect"
+  },
+  {
+    "id": "TRACE-RUST-CMD",
+    "language": "rust",
+    "source": "apps/rust/src/routes.rs:ping_route(host)",
+    "steps": [
+      "apps/rust/src/routes.rs:ping_route",
+      "apps/rust/src/service.rs:ping",
+      "apps/rust/src/storage.rs:run_command"
+    ],
+    "sink": "Command::new('sh').arg('-c')",
+    "cwe": "CWE-78",
+    "expected": "must_detect"
+  },
+  {
+    "id": "TRACE-JAVA-DESER",
+    "language": "java",
+    "source": "apps/java/UserController.java:importData -> request.getBody()",
+    "steps": [
+      "apps/java/UserController.java:importData",
+      "apps/java/UserService.java:importObject",
+      "apps/java/UserDao.java:deserialize"
+    ],
+    "sink": "ObjectInputStream.readObject()",
+    "cwe": "CWE-502",
+    "expected": "must_detect"
+  },
+  {
+    "id": "TRACE-KOTLIN-WEBVIEW",
+    "language": "kotlin",
+    "source": "apps/kotlin/ProfileController.kt:preview -> request.body('html')",
+    "steps": [
+      "apps/kotlin/ProfileController.kt:preview",
+      "apps/kotlin/ProfileService.kt:render",
+      "apps/kotlin/ProfileStore.kt:loadHtml"
+    ],
+    "sink": "WebView.loadData()",
+    "cwe": "CWE-79",
+    "expected": "must_detect"
+  }
+]
